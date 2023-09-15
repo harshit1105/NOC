@@ -31,4 +31,7 @@ jobs:
       - name: Remove Test Directory 🗑️
         run: |
           rm -rf ./Test
+          git add .
+          git commit -m "Removed Folder"
+          git push
       
