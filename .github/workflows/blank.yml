@@ -37,4 +37,7 @@ jobs:
           git commit -m "Removed Folder"
           git push
           mkdir ./Test
+          git add .
+          git commit -m "Adding Folder"
+          git push
       
