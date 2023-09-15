@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.email "harshitsan@gmail.com"
           git config --global user.name "harshit1105"
-          mkdir ./myNewFolder/
+          mkdir ./myNewFolder/.gitkeep
           git add .
           git commit -m "Adding Folder"
           git push
