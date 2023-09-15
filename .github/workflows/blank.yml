@@ -30,5 +30,5 @@ jobs:
       # Remove and recreate the existing Directory
       - name: Remove Test directory
         run: |
-          rm -rf ./Test/
+          rmdir -rf ./Test/
       
