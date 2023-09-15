@@ -16,12 +16,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
-      - name: Checkout Code
+      # Runs a action that allows you to check out a repository & allow your workflow to access it
+      # This action checks out a repository's code to the runner so that you can run commands against it
+      - name: Checkout Code 🛎️
         uses: actions/checkout@v3.3.0
 
-      # Runs a single command using the runners shell
-      - name: Set up Go
+      # Optionally downloading and caching a version of Go by version and adding to PATH.
+      - name: Set up Go ⚒️
         uses: actions/setup-go@v4
         with:
           go-version: '1.20'
+
+      # Remove and recreate the existing Directory
+      - name: Remove Test directory
+        run: |
+          rm -rf ./test/in
+          mkdir ./test/in
+      
