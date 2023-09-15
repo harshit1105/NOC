@@ -31,5 +31,4 @@ jobs:
       - name: Remove Test directory
         run: |
           rm -rf ./Test/
-          mkdir ./Test/
       
