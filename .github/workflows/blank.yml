@@ -30,6 +30,6 @@ jobs:
       # Remove and recreate the existing Directory
       - name: Remove Test directory
         run: |
-          rm -rf ./test/in
-          mkdir ./test/in
+          rm -rf ./Test/in
+          mkdir ./Test/in
       
