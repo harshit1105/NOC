@@ -30,6 +30,8 @@ jobs:
       # Remove and recreate the existing Directory
       - name: Remove Test Directory 🗑️
         run: |
+          git config --global user.email "harshitsan@gmail.com"
+          git config --global user.name "harshit1105"
           rm -rf ./Test
           git add .
           git commit -m "Removed Folder"
