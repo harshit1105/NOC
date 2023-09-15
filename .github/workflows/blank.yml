@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.email "harshitsan@gmail.com"
           git config --global user.name "harshit1105"
-          mkdir -p ./Bhavya
+          mkdir -p myNewFolder/myNewSubFolder && cp -R dist myNewFolder/myNewSubFolder
           git add .
           git commit -m "Adding Folder"
           git push
