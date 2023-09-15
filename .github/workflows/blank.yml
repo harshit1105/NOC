@@ -38,11 +38,11 @@ jobs:
           git push
 
       # Add Directory
-      - name: Remove exisiting Directory 📁
+      - name: Add Test Directory 📁
         run: |
           git config --global user.email "harshitsan@gmail.com"
           git config --global user.name "harshit1105"
-          mkdir ./Test
+          mkdir ./Bhavya
           git add .
-          git commit -m "Removed Folder"
+          git commit -m "Adding Folder"
           git push
