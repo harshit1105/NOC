@@ -36,14 +36,5 @@ jobs:
           git add .
           git commit -m "Removed Folder"
           git push
-
-      # Add Directory
-      - name: Add Test Directory 📁
-        run: |
-          git config --global user.email "harshitsan@gmail.com"
-          git config --global user.name "harshit1105"
           mkdir ./Test
-          git add .
-          git commit -m "Removed Folder"
-          git push
       
